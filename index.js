@@ -28,7 +28,7 @@
                 return response.json();
             })
             .then(function (result) {
-                if (result.error !== undefined) {
+                if (result && result.error) {
                     alert(result.error);
                 }
                 console.log(result);
