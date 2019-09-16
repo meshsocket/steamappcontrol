@@ -17,8 +17,15 @@ body {
     display: none;
 }
 
-.friends-list {
+.friends-list-container {
     flex: 0 0 600px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.friends-list {
+    width: 100%;
 }
 
 .friends-list .friend {
